@@ -1,0 +1,34 @@
+/* Book Detail Page Styles */
+
+.book-images-section {
+  position: sticky;
+  top: 100px;
+  align-self: start;
+}
+
+.book-details-section {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+  .book-images-section {
+    position: relative;
+    top: 0;
+  }
+  
+  .book-details-section {
+    margin-top: 30px;
+  }
+}
+
+/* Smooth transitions */
+.book-images-section img {
+  transition: transform 0.3s ease;
+}
+
+.book-images-section img:hover {
+  transform: scale(1.02);
+}
+
